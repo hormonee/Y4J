@@ -36,6 +36,9 @@ out/
 ### VS Code ###
 .vscode/
 
-## 키 들어있는 파일 ##
+## Mac OS ##
+.DS_Store
+
+## Setting Files ##
 application.yaml
 application.properties
