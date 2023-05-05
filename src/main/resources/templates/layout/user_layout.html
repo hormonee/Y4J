@@ -37,7 +37,10 @@
 
 		<!-- popper.js -->
 		<script src="https://unpkg.com/@popperjs/core@2"></script>
-		<!-- bootstrap -->
+		<!-- spinner -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- css링크 -->
 		<link rel="stylesheet" href="/css/bootstrapcss/bootstrap.min.css">
 		<!-- 부트스트랩 테마가 필요하면 이쯤 추가 -->
@@ -60,28 +63,28 @@
 							<!-- <span>LOGIN</span> -->
 						</a>
 					</li>
-					<li th:if="${session.user_id != null}"  class="header_middle_user">
+					<li th:if="${session.user_id != null}" class="header_middle_user">
 						<a href="/user/userLogoutForm">
 							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="LOGOUT"
 								src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/logout_icon.png">
 							<!-- <span>LOGOUT</span> -->
 						</a>
 					</li>
-					<li th:if="${session.user_id == null && session.admin_id == null}"  class="header_middle_user">
+					<li th:if="${session.user_id == null && session.admin_id == null}" class="header_middle_user">
 						<a href="/user/user_join">
 							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="JOIN"
 								src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/loginJoin.png">
 							<!-- <span>JOIN</span> -->
 						</a>
 					</li>
-					<li th:if="${session.user_id != null}"  class="header_middle_user">
+					<li th:if="${session.user_id != null}" class="header_middle_user">
 						<a href="/user/mypage">
 							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="MY PAGE"
 								src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/loginMember.png">
 							<!-- <span>MY PAGE</span> -->
 						</a>
 					</li>
-					<li th:if="${session.user_id != null}"  class="header_middle_user">
+					<li th:if="${session.user_id != null}" class="header_middle_user">
 						<a href="/user/cart">
 							<img data-bs-toggle="tooltip" data-bs-placement="bottom" style="width:32px; height: 29px;" title="CART"
 								src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/shopping_cart.png">
@@ -90,19 +93,22 @@
 					</li>
 					<li th:if="${session.admin_id != null}" class="header_middle_user adminPage">
 						<a href="/admin/admin_home">
-							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="ADMIN PAGE" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/manage_page.png">
+							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="ADMIN PAGE"
+								src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/manage_page.png">
 							<!-- <span>ADMIN PAGE</span> -->
 						</a>
 					</li>
 					<li th:if="${session.admin_id != null}" class="header_middle_user adminMsg">
 						<a href="/admin/admin_msg">
-							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="MESSAGE" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/chat1.png">
+							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="MESSAGE"
+								src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/chat1.png">
 							<!-- <span>MESSAGE</span> -->
 						</a>
 					</li>
 					<li th:if="${session.admin_id != null}" class="header_middle_user adminLogout">
 						<a href="/admin/adminLogoutForm">
-							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="LOGOUT" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/logout_icon.png">
+							<img data-bs-toggle="tooltip" data-bs-placement="bottom" title="LOGOUT"
+								src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/logout_icon.png">
 							<!-- <span>LOGOUT</span> -->
 						</a>
 					</li>
@@ -154,14 +160,14 @@
 					</div>
 				</div>
 			</div><!-- 헤더 상단 메뉴바 끝 -->
-			
+
 		</div>
 		<div class="logo_box">
-				<a href="/">
-					<img style="width:115px; height: 85px"
-						src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/y4j_logo_black.png" />
-				</a>
-			</div>
+			<a href="/">
+				<img style="width:115px; height: 85px"
+					src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/y4j_logo_black.png" />
+			</a>
+		</div>
 
 	</header>
 
@@ -203,7 +209,7 @@
 							</div>
 							<div class="chat-input">
 								<input type="text" placeholder="Type your message here...">
-								<button type="button" class="btn btn-outline-dark" onclick="spinner()">전송</button>
+								<button type="button" class="btn btn-outline-dark">전송</button>
 							</div>
 						</div>
 

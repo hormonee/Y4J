@@ -300,6 +300,16 @@ footer .footer-inner .footer-right span {
   vertical-align: middle;
 }
 
+.cb-modal-body {
+  width: 550px;
+}
+
+.cb-modal-body .loader {
+  display: none;
+  font-size: 30px;
+  text-align: center;
+}
+
 .chat-container {
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -312,27 +322,30 @@ footer .footer-inner .footer-right span {
   padding: 10px;
 }
 
-.chat-message {
-  margin-bottom: 10px;
+.chat-message.bot-msg {
+  text-align: left;
 }
 
-.chat-message p {
+.chat-message.user-msg {
+  text-align: right;
+}
+
+.chat-message p.assistant {
   padding: 5px 10px;
   border-radius: 10px;
   max-width: 60%;
+  background-color: #E5E5EA;
+  color: black;
   display: inline-block;
 }
 
-.assistant {
-  background-color: #E5E5EA;
-  color: black;
-  float: left;
-}
-
-.user {
+.chat-message p.user {
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-width: 60%;
   background-color: #0B93F6;
   color: white;
-  float: right;
+  display: inline-block;
 }
 
 .chat-input {
@@ -345,6 +358,7 @@ footer .footer-inner .footer-right span {
 
 .chat-input input[type="text"] {
   width: 80%;
+  height: 42px;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -353,7 +367,7 @@ footer .footer-inner .footer-right span {
 }
 
 .chat-input button {
-  height: 46px;
+  height: 42px;
   border: 1px solid #999;
   border-radius: 10px;
 }
