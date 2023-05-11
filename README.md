@@ -1,0 +1,36 @@
+#Y4J
+- Y4J Project (Y2K hommage)
+
+#주제
+- 연예 기획사 홈페이지 및 관리자 페이지
+
+#기획 의도
+- 비회원 및 일반 회원들을 대상으로 하는 페이지 및 관리자 페이지 구현
+
+#팀원
+- 본인 외 4명
+
+#본인 역할
+- 프로젝트의 팀 리더로서 웹페이지 기획, DB 구축, 시스템 아키텍처 설계, 개발 환경 설정 등 전체적인 프로세스를 주도적으로 진행
+
+#담당 업무
+- 개발 일정 및 형상 관리 
+- 권한 관리 시스템 구축 
+- 오디션 지원 및 관리 시스템 구축 
+- 쪽지 기능 구현 
+- 인공지능 챗봇 기능 구현 (ChatGPT API) 
+- 사이트 인트로 페이지 및 팝업 페이지 제작 
+- 관리자 페이지 레이아웃 제작
+
+#개발 환경
+- Language : Java, HTML5, CSS3, JavaScript(ES6) 
+- Framework : STS4(Spring Boot), Express.js 
+- Platform : Node.js, AWS Lambda 
+- Database : AWS RDS(MySQL) 
+- View : Thymeleaf & React 
+- Storage : AWS S3
+- 개발 도구 : Eclipse, VS Code
+
+#산출물
+- Website - https://hormone.world
+- Portfolio - https://hormone.tistory.com/144
