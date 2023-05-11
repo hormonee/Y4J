@@ -87,11 +87,17 @@
 									</a>
 								</li>
 							</th:block>
+							
+							
+							
 							<th:block th:each="p, s : ${pageVO.pageList}">
-								<li class="p-li" th:class="${pageVO.pageNum == p ? 'on' : ''}"><a class="page-link"
-										th:href="@{admin_authority_list(searchValue=${criteria.searchValue}, pageNum=${p}, amount=${pageVO.amount} ) }">[[${p}]]</a>
+								<li class="p-li" th:class="${pageVO.pageNum == p ? 'on' : ''}">
+									<a class="page-link" th:href="@{admin_authority_list(searchValue=${criteria.searchValue}, pageNum=${p}, amount=${pageVO.amount} ) }">[[${p}]]</a>
 								</li>
 							</th:block>
+							
+							
+							
 							<th:block th:if="${pageVO.next}">
 								<li class="page-link">
 									<a

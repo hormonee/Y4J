@@ -57,23 +57,26 @@ a {
   padding-top: 15px;
 }
 
-.pagination > li > .page-link {
-  color: black;
+.pagination > li {
   box-sizing: border-box;
 }
 
+.pagination > li > .page-link {
+  color: black;
+}
+
+.pagination > li.on > .page-link {
+  background-color: #333;
+  color: whitesmoke;
+}
+ 
 .page-link > a > span {
   color: black;
-  box-sizing: border-box;
 }
 
 .pagination > li:hover {
   border: 2px solid #212529;
   color: black;
-  background-color: rgb(235, 235, 235);
-}
-
-.pagination > li > .page-link:hover {
   background-color: rgb(235, 235, 235);
 }
 
