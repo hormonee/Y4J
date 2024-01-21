@@ -49,6 +49,9 @@ dependencies {
 	//security
 	implementation 'org.springframework.boot:spring-boot-starter-security:2.7.9'
 	
+	//swagger
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.11'  
+	
 	//이메일 인증
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
 }

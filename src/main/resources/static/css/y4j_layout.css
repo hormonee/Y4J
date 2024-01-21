@@ -499,11 +499,16 @@ aside .aside_wrap {
   left: 92px;
 }
 
+.aside_menu_bar .aside_menu_bar_list li.audMenuBar {
+  position: relative;
+  top: 30px;
+  left: 92px;
+}
+
 .aside_menu_bar_list_prod {
   margin: 15px 0;
   width: 100%;
   position: absolute;
-  z-index: 1;
 
 }
 

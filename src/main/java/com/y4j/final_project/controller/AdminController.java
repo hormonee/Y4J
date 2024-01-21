@@ -78,12 +78,12 @@ public class AdminController {
 		
 		//유효성 검사
 		if(errors.hasErrors()) { //에러가 있다면 true, 없다면 false
-			List<FieldError> list = errors.getFieldErrors();
+			List<FieldError> list = errors.getFieldErrors(); 
 			for(FieldError err : list) {
 				if(err.isBindingFailure()) { //유효성 검사의 실패가 아니라, 자바 내부의 에러라면 true 반환
 					model.addAttribute("valid_" + err.getField(), "형식이 올바르지 않습니다");
 				} else { //유효성 검사에 실패한 목록
-					model.addAttribute("valid_" +err.getField(), err.getDefaultMessage());
+					model.addAttribute("valid_" + err.getField(), err.getDefaultMessage());
 				}
 			}
 			model.addAttribute("vo1", vo1);
@@ -156,7 +156,7 @@ public class AdminController {
 	}
 	
 	// 아이디 찾기
-	@GetMapping("admin_find_id")
+	@GetMapping("/admin_find_id")
 	public String admin_find_id() {
 
 		return "admin/admin_find_id";
@@ -172,14 +172,14 @@ public class AdminController {
 	}
 
 	// 아이디찾기 결과
-	@GetMapping("user_find_id_result")
+	@GetMapping("/user_find_id_result")
 	public String user_find_id_result() {
 
 		return "user/user_find_id_result";
 	}
 
 	// 비밀번호 찾기
-	@GetMapping("user_find_pw")
+	@GetMapping("/user_find_pw")
 	public String user_find_pw() {
 
 		return "user/user_find_pw";
@@ -294,7 +294,6 @@ public class AdminController {
 				ra.addFlashAttribute("msg", "쪽지 발송에 실패했습니다.");
 				return "redirect:/admin/admin_msg";
 			}
-			
 		}
 		
 		int result = messageService.sendMsg(msgVO);

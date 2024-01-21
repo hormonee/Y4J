@@ -56,9 +56,9 @@
 			<!-- <otherwise>where 1=1</otherwise> -->
 		</choose>
 		
-		<if test="startDate != null and startDate != '' ">
+		<if test="startDate != null and startDate != '' " >
 			<![CDATA[ and audition_cv_regdate >= #{startDate} ]]>
-		</if>
+s		</if>
 		<if test="endDate != null and endDate != '' ">
       		<![CDATA[ and audition_cv_regdate < date_add(#{endDate}, interval 1 day) ]]>
 		</if>

@@ -57,7 +57,6 @@ public class AuditionController {
 		PageVO pageVO = new PageVO(cri, total);
 		model.addAttribute("pageVO", pageVO);
 		
-		
 		return "audition/admin_audition_list";
 	}
 	

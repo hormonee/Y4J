@@ -2,8 +2,7 @@
 <html xmlns:th=“http://www.thymeleaf.org”>
 <link rel="stylesheet" href="/css/admin_audition_list.css">
 
-<th:block
-	th:replace="~{./layout/y4j_layout :: funcLayout(~{:: .fragment})}">
+<th:block th:replace="~{./layout/y4j_layout :: funcLayout(~{:: .fragment})}">
 
 	<div class="fragment">
 		<div class="fragment-inner">
@@ -114,7 +113,8 @@
 								</li>
 							</th:block>
 							<th:block th:each="p, s : ${pageVO.pageList}">
-								<li class="p-li" th:class="${pageVO.pageNum == p ? 'on' : ''}"><a class="page-link"
+								<li class="p-li" th:class="${pageVO.pageNum == p ? 'on' : ''}">
+									<a class="page-link"
 										th:href="@{admin_audition_list(searchValue=${criteria.searchValue}, pageNum=${p}, amount=${pageVO.amount} ) }">[[${p}]]</a>
 								</li>
 							</th:block>

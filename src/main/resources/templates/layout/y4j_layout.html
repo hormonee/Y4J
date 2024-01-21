@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Y4J</title>
 	<!-- 스와이퍼 -->
-	<link rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<!-- jquery -->
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
 	<script	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -36,8 +36,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- 폰트 1 -->
   <link rel="stylesheet" href="/css/product_page/product_page.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- 폰트 2 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,7 +158,7 @@
               </ul>
             </div> -->
             <div class="aside_menu_bar">
-              <ul class="slide">
+              <ul class="slide sideMenuBar2">
                 <li style="margin-left: 35px; margin-right: 10px;"><img style="width: 27px; height: 27px" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/authorityTab.png"/></li>
                 <li style="margin-left: 20px; padding-bottom: 4px"><span style="margin: 0;">권한 관리</span></li>
                 <li id="slide_down_img"><img style=" width: 29px; height: 29px; margin-right: 0" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/arrowDown.png"/></li>
@@ -172,7 +170,7 @@
               </ul> 
             </div>
             <div class="aside_menu_bar ">
-              <ul class="slide mngBar3">
+              <ul class="slide sideMenuBar4">
                 <li style="margin-left: 35px; margin-right: 10px;"><img style="width: 27px; height: 27px" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/productTab.png"/></li>
                 <li style="margin-left: 20px; padding-bottom: 4px"><span style="margin: 0;">상품 관리</span></li>
                 <li id="slide_down_img"><img style=" width: 29px; height: 29px; margin-right: 0" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/arrowDown.png"/></li>
@@ -188,7 +186,7 @@
             </div>
             
             <div class="aside_menu_bar ">
-              <ul class="slide">
+              <ul class="slide sideMenuBar2">
                 <li style="margin-left: 35px; margin-right: 10px;"><img style="width: 27px; height: 27px" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/scheduleTab.png"/></li>
                 <li style="margin-left: 20px; padding-bottom: 4px"><span style="margin: 0;">일정 관리</span></li>
                 <li id="slide_down_img"><img style=" width: 29px; height: 29px; margin-right: 0" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/arrowDown.png"/></li>
@@ -201,15 +199,14 @@
             </div>
             
             <div class="aside_menu_bar ">
-              <ul class="slide">
-                <li style="margin-left: 35px; margin-right: 10px;"><img style="width: 28px; height: 28px" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/auditionTab.png"/></li>
+              <ul class="slide sideMenuBar1">
+                <li style="margin-left: 35px; margin-right: 10px;"><img style="width: 28px; height: 14px" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/auditionTab.png"/></li>
                 <li style="margin-left: 20px; padding-bottom: 4px"><span style="margin: 0;">오디션 관리</span></li>
                 <li id="slide_down_img"><img style=" width: 29px; height: 29px; margin-right: 7px" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/arrowDown.png"/></li>
                 <li id="slide_up_img"><img style="width: 12px; height: 12px; margin-right: 9px;" src="https://jafp.s3.ap-northeast-2.amazonaws.com/y4j/arrowUp.png"/></li>
               </ul>
               <ul class="aside_menu_bar_list">
-                <li><a href="/audition/admin_audition_list">오디션 신청 목록</a></li>
-                <li><a href="/audition/admin_audition_register">오디션 결과 등록</a></li>
+                <li class="audMenuBar"><a href="/audition/admin_audition_list">오디션 신청 목록</a></li>
               </ul>
             </div>
           </div>

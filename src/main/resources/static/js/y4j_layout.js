@@ -96,20 +96,28 @@ $(document).ready(function () {
 
   $('.slide #slide_down_img').click(function () {
 
-    if ($(this).closest("ul").hasClass("mngBar3")) {
+    if ($(this).closest("ul").hasClass("sideMenuBar4")) {
       $(this).closest('ul').next().slideDown();
       $(this).closest("div").css("margin-bottom", "140px");
       $(this).closest("div").css("transition", "all 2s ease 0s");
       $(this).css("display", "none");
       $(this).next('li').css("display", "block");
 
-    } else {
+    } else if($(this).closest("ul").hasClass("sideMenuBar2")){
       $(this).closest('ul').next().slideDown();
       $(this).closest("div").css("margin-bottom", "60px");
       $(this).closest("div").css("transition", "all 1s ease 0s");
       $(this).css("display", "none");
       $(this).next('li').css("display", "block");
+    
+    } else if($(this).closest("ul").hasClass("sideMenuBar1")){
+      $(this).closest('ul').next().slideDown();
+      $(this).closest("div").css("margin-bottom", "30px");
+      $(this).closest("div").css("transition", "all 1s ease 0s");
+      $(this).css("display", "none");
+      $(this).next('li').css("display", "block");
     }
+
     // 사이드 메뉴바 탭 닫기
     $('#slide_up_img ').click(function () {
       $(this).closest('ul').next().slideUp();
